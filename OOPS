@@ -1,0 +1,72 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+class Player{
+    String type;
+    String Hand;
+    String style;
+    int age;
+    Player(String type,String Hand,String style,int age)
+    {
+        this.type=type;
+        this.Hand=Hand;
+        this.style=style;
+        this.age=age;
+    }
+    //POLYMORPHISM 
+   public void action(String type)
+    {
+        System.out.println(type);
+  //  }
+    //public void  type()
+//    {
+       // System.out.println(this.type);
+    //}
+  //  public void  Hand()
+//    {
+      ///  System.out.println(this.Hand);
+    //}
+  //  public void  style()
+//    {
+      //  System.out.println(this.style);
+    //}
+    //public void  age()
+//    {
+      //  System.out.println(this.age);
+    }
+    public void action(String type,String Hand)
+    {
+        System.out.println(type+" "+Hand);
+    }
+    public void action(int age)
+    {
+        System.out.println(age);
+    }
+    
+    
+    
+    
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+		//System.out.println("Hello World");
+		Player p1=new Player("Bat","Right","Radical",23);
+		//1.style="Radical";
+	//	p1.age=23;
+	//	p1.age();
+	//	Player p2=new Player("Bowl","Left","chinaman",38);
+	//	p1.style="fast";
+		//p2.age=38;
+		p1.action(p1.type,p1.Hand);
+		
+	///	System.out.println("*_____________*________________*");
+		//p2.action();
+	}
+}
